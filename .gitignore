@@ -4,5 +4,6 @@
 *.swp
 *.rbc
 *.sass-cache
+.env
 /pkg
 /doc/api
