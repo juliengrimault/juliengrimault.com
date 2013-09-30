@@ -4,32 +4,34 @@
   %head
     %meta{ :charset => "utf8" }
     %title Julien Grimault
-    %link{ :href =>"http://fonts.googleapis.com/css?family=Kreon:300,400,700", :rel =>"stylesheet", :type =>"text/css" }
+    %link{ :href =>"http://fonts.googleapis.com/css?family=Kreon:300,700", :rel =>"stylesheet", :type =>"text/css" }
     %link{ :href => "/assets/application.css", :rel => "stylesheet"}
     %link{ :rel =>"author", :type =>"text/plain", :href =>"human.txt" }
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
 
   %body
     #header-image
-      .inner{ :style => "background-image: url('/assets/bretagna-3.jpg')" }
-        %img{ :src => '/assets/bretagne-3.jpg', :onload => "document.getElementById('header-image).className += ' show'" }
+      .inner
+        %img{ :src => '/assets/bretagne-3.jpg', :onload => "document.getElementById('header-image').className += 'show'" }
     %a#julien_badge{ :href => '/'  }
       %span Julien
 
-    %header
-      %h1 
-        %a{ :href => "/", :rel => 'home' } Julien Grimault
+    #content
+      %header
+        %h1
+          %a{ :href => "/", :rel => 'home' } Julien Grimault
+
         %p
           Technology, design and beer lover.
 
         %p
           French software engineer in Singapore.
 
-    = yield
+      = yield
 
-    %footer
-      %p
-        © #{ Time.now.year }
-        %a{ :href => "/", :rel => "home" } Julien Grimault
+      %footer
+        %p
+          © #{ Time.now.year }
+          %a{ :href => "/", :rel => "home" } Julien Grimault
 
     %script{ :src => "/assets/application.js" }

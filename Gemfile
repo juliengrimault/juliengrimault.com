@@ -13,6 +13,11 @@ gem 'haml'
 # Asset pipeline
 gem 'sprockets'
 
+# Stylesheet
+gem 'sass'
+gem 'sprockets-sass'
+gem 'bourbon'
+
 group :development do
   # Reloading in development
   gem 'shotgun'
