@@ -15,11 +15,7 @@
   }
 
   @media #{$small-query} {
-    margin: 2em auto 3em;
-
-    p:nth-child(2) {
-      margin-bottom: 1em;
-    }
+    margin: 2em auto 1em;
   }
 }
 

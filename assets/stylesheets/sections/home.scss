@@ -1,6 +1,9 @@
 
 section.home h2 {
   margin-top: 2em;
+  @media #{$small-query} {
+    margin-top: 1em;
+  }
 }
 
 
