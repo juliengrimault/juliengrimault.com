@@ -7,3 +7,4 @@
 .env
 /pkg
 /doc/api
+log/
