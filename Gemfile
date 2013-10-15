@@ -18,6 +18,8 @@ gem 'sass'
 gem 'sprockets-sass'
 gem 'bourbon'
 
+gem 'newrelic_rpm'
+
 group :development do
   # Reloading in development
   gem 'shotgun'
