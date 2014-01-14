@@ -64,3 +64,75 @@ ul.apps {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   }
 }
+
+.four-stripe {
+  @include clearfix;
+  margin-top: 3em;
+
+  @media #{$small-query} {
+      width: 304px;
+      height: 304px;
+      margin: 0 auto 3em;
+  }
+
+  ul {
+    width:100%;
+    height: 150px;
+    margin-bottom: 8px;
+
+    line-height: 0;
+    font-size: 0.1px;
+
+    @media #{$small-query} {
+      height: 304px;
+    }
+  }
+
+  li {
+    height: 150px;
+    display: inline-block;
+    margin: 0 0 2px 2px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    a:hover {
+      border: 0;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 16px;
+
+    a:first-child {
+      position: relative;
+      top: 2px;
+      margin-right: 2px;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
+
+div.px500 {
+  a {
+    color: $light-gray;
+
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  p a:first-child {
+   background: url('/assets/500px.png') no-repeat 0 2px;
+   background-size: cover;
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+  }
+}

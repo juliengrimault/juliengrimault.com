@@ -58,3 +58,16 @@
       #{link_nofollow("LargeNumberFormatter","https://github.com/juliengrimault/JGLargeNumberFormatter")} &mdash; Format large numbers with abreaviations.
 
   %p Feel free to check out the full list of my open source projects #{link_nofollow("on GitHub","https://github.com/juliengrimault")}.
+
+  - if photos = JSON(settings.redis['500px'])
+    %div.four-stripe.px500
+      %ul
+        - photos.each do |photo|
+          %li
+            %a{ :href => "https://500px.com/photo/#{photo["id"]}", :rel => "external nofollow", :title => photo["name"] }
+              %img{ :src => photo["image_url"], :alt => photo["name"] }
+
+      %p
+        %a{ :href => "https://500px.com/juliengrimault", :rel => "external nofollow" }
+        %a{ :href => "https://500px.com/juliengrimault", :rel => "external nofollow" }
+          Follow @juliengrimault

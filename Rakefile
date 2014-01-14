@@ -6,14 +6,14 @@ require 'uri'
 require 'redis'
 
 desc 'Update all the sources'
-task :update => ['update:500px', 'update:spotify']
+task :update => ['update:500px']
 
 
 namespace :update do
 
   desc 'Fetch latest photos from 500px and store them in redis'
   task '500px' do
-    response = px500.user_photos('juliengrimault', query: { rpp: 4 })
+    response = px500.user_photos('juliengrimault', query: { rpp: 4, image_size: 3 })
     photos = JSON(response.body)['photos']
     redis['500px'] = JSON.dump(photos)
   end
