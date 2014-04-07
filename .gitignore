@@ -1,10 +1,9 @@
-# please add general patterns to your global ignore list
-# see https://github.com/github/gitignore#readme
-.DS_STORE
-*.swp
-*.rbc
-*.sass-cache
-.env
-/pkg
-/doc/api
-log/
+
+#jekyll
+_site/
+
+# osx noise
+.DS_Store
+profile
+*~
+.*.swp

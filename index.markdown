@@ -43,7 +43,6 @@ title: Introduction
       <a href"https://itunes.apple.com/us/app/tradehero-mobile/id572226383" rel="external nofollow" title="TradeHero">
         <img src="{% asset_path tradehero.jpg %}" alt="TradeHero"/>
         <span>TradeHero</span>
-        <span>TradeHero</span>
       </a>
     </li>
   </ul>
@@ -74,18 +73,21 @@ title: Introduction
     </li>
   </ul>
   <p>Feel free to check out the full list of my open source projects [on GitHub](https://github.com/juliengrimault).</p>
+  {% unless site.data.500px.empty? %}
   <div class="four-stripe px500">
-     <ul>
-        <li>
-          <a href="https://500px.com/photo/#{photo['id']}" rel="external nofollow" title="photo['name']">
-            <img src="photo['image_url']" alt="photo['name]"/>
-          </a>
-        </li>
-    </ul>
-    <p>
-      <a href="https://500px.com/juliengrimault" rel="external nofollow"/>
-      <a href="https://500px.com/juliengrimault" rel="external nofollow">
-          Follow @juliengrimault
-      </a>
-    </p>
+   <ul>{% for photo in site.data.500px %}<li>
+       <a href="https://500px.com/photo/{{ photo.id }}" rel="external nofollow" title="{{ photo.name }}">
+         <img src="{{ photo.image_url }}" alt="{{ photo.name }}"/>
+       </a>
+     </li>
+   {% endfor %}
+   </ul>
+   <p>
+     <a href="https://500px.com/juliengrimault" rel="external nofollow"/>
+     <a href="https://500px.com/juliengrimault" rel="external nofollow">
+       Follow @juliengrimault
+     </a>
+   </p>
+  </div>
+  {% endunless %}
 </section>

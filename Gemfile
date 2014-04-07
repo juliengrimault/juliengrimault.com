@@ -11,3 +11,4 @@ gem "jekyll-assets"
 gem "uglifier"      # And we want our javascripts to be minified with UglifyJS
 gem 'sass'
 gem "bourbon"
+gem 'httparty'
