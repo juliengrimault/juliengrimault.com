@@ -1,5 +1,6 @@
 @import "bourbon";
-@import "globals/*";
+@import "globals/mixins";
+@import "globals/variables";
 @import "components/reset";
 
 
@@ -87,7 +88,7 @@ h2 {
 @import "components/badge";
 
 //Sections
-@import "sections/*";
+@import "sections/home";
 
 
 //Footer

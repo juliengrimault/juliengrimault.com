@@ -1,0 +1,16 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+ 
+gems: [jekyll-assets, jekyll-assets/bourbon]
+
+# Plugin: jekyll-assets
+#
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/stylesheets/globals
+    - _assets/stylesheets/sections
+    - _assets/stylesheets/components
+    - _assets/images

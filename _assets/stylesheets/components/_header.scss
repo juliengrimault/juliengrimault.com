@@ -30,7 +30,7 @@
   width: 100%;
   height: 45%;
   background: #909396 no-repeat center center;
-  background-image: url('/assets/spinner.gif');
+  background-image: url(asset_path('spinner.gif'));
 
   .inner {
     width: 100%;
@@ -42,7 +42,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url('/assets/bretagne-3.jpg');
+    background-image: url(asset_path('bretagne-3.jpg'));
   }
 }
 
